@@ -54,3 +54,14 @@ for x in adj:
 # for loops cannot be empty, but if you for some reason have a for loop with no content, put in the pass statement to avoid getting an error.
 for x in [0, 1, 2]:
   pass
+
+print("")
+class Solution:
+    def hasDuplicate(self, nums: List[int]) -> bool:
+        for i in range(len(nums)):
+          if i%2 == 0:
+            print(i)       
+    
+
+m = Solution()
+print(m.hasDuplicate([1,2,3,3]))
