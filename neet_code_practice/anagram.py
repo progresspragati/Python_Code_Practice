@@ -32,8 +32,8 @@ class Solution:
         list_t = [0]*26
         i = 0
         while i < len(s):
-            list_s[ord(s[i]) - 97] += 1
-            list_t[ord(t[i]) - 97] += 1
+            list_s[ord(s[i]) - ord("a")] += 1
+            list_t[ord(t[i]) - ord("a")] += 1
             i += 1
         j = 0
         while j < len(list_s):
@@ -43,4 +43,4 @@ class Solution:
         return True
     
 m = Solution()
-print(m.isAnagramUsingSet("hellw", "llohe"))
+print(m.isAnagramUsingSet("hello", "llohe"))
