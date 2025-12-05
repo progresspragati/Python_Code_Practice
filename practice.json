@@ -1,0 +1,10 @@
+{
+    "student":"pragati",
+    "age":45,
+    "class":"none",
+    "employees":[
+        {"firstName":"John", "lastName":"Doe"},
+        {"firstName":"Anna", "lastName":"Smith"},
+        {"firstName":"Peter", "lastName":"Jones"}
+    ]
+}   
