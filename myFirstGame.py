@@ -1,11 +1,14 @@
+MAX_ATTEMPTS = 3
+LOW, HIGH = 1, 100
+
 import random
 def guessingNumberGame():
-    random_num = random.randrange(1,10)
-    print("**************Welcome!**************\nGuess The Number Between 1 to 10.")
+    random_num = random.randrange(LOW, HIGH)
+    print(f"**************Welcome!**************\nGuess The Number Between {LOW} to {HIGH}.")
     print("************************************")
     i = 1
     j = 0
-    while i <= 5 and j == 0:
+    while i <= MAX_ATTEMPTS and j == 0:
         try:
             guess_num = int(input("Enter Your Guess Number:"))
         except:
@@ -30,4 +33,6 @@ def guessingNumberGame():
         print("")
         guessingNumberGame()
     return
+
+
 guessingNumberGame()
