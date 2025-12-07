@@ -9,7 +9,8 @@ def guessingNumberGame():
         try:
             guess_num = int(input("Enter Your Guess Number:"))
         except:
-            print("Given input is not a number!")
+            print("Given input is not a number!Please, enter a number!")
+            continue
         if guess_num == random_num:
             print(f"You guessed right number in {i} attempts.")
             print("Congratulations! You won the Game!")
